@@ -1,12 +1,13 @@
 
+import './sass/timer.scss';
 
+const bodyRef = document.querySelector('body')
+bodyRef.insertAdjacentHTML("beforebegin", `<div class="timer" id="timer-1"></div>`)
 const targetTime = new Date(2021, 6, 25, 11, 11, 11).getTime()
 console.log(targetTime)
 
 timer()
 
-
-import './sass/timer.scss';
 function timer() {
     let intID = setInterval(function()
     {
