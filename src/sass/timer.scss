@@ -1,0 +1,13 @@
+.timer {
+  display: flex;
+}
+
+.field {
+  background: linear-gradient(45deg, rgb(250, 110, 175), rgb(59, 15, 87));
+  font-size: 25px;
+  color: rgb(30, 9, 49);
+  font-weight: 700;
+  flex: 4;
+  padding: 20px;
+  margin-left: 10px;
+}
