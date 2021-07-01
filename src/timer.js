@@ -1,5 +1,5 @@
 
-import './sass/timer.scss';
+import './sass/main.scss';
 
 const bodyRef = document.querySelector('body')
 bodyRef.insertAdjacentHTML("afterbegin", `<div class="timer" id="timer-1"></div>`)
