@@ -20,8 +20,13 @@ class CountdownTimer {
         setInterval(() => {
             const startDate = Date.now();
             const time = this.targetDate - startDate;
-            const { days, hours, mins, secs } = this.getTimeComponents(time);
-            this.updateClockface(this.getTimeComponents(time));
+            if (time > 0) {
+                const { days, hours, mins, secs } = this.getTimeComponents(time);
+                this.updateClockface(this.getTimeComponents(time));
+            } else {
+                clearInterval();
+                document.getElementById("timer-1").innerHTML = "EXPIRED!";
+            }       
             
         }, 1000);
     }
